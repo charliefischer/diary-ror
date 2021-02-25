@@ -1,3 +1,29 @@
 // Place all the styles related to the Entries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family:'Gill Sans';
+  font-weight: 800;
+}
+
+h2 {
+  font-family:'Gill Sans';
+  font-weight:600;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color:navy;
+  border-bottom: solid 2px navy;
+  padding-bottom: 3px;
+}

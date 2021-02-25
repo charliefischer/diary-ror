@@ -1,3 +1,9 @@
+<head>
+<title>My Little Webapp: Coding Is Magic</title>
+<meta charset="UTF-8" />
+</head>
+<body>
+
 <%= form_for(@entry) do |form| %>
     <p><%= form.label("title") %></p>
     <p><%= form.text_field("title") %></p>
@@ -9,3 +15,5 @@
   <% end %>
   <p><%= link_to('Back to this entry', entry_path(@entry)) %></p>
   <p><%= link_to("Back to all entries", entries_path) %></p>
+  
+<body>
