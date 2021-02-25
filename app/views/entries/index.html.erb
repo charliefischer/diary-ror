@@ -3,4 +3,6 @@
 <% for entry in @entries %>
 <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
 <p><%= entry.date %></p>
+<p><%= link_to 'delete', entry, :confirm => "sure?",
+                                :method => :delete %></p> 
 <% end %>

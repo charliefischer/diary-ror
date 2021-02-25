@@ -18,10 +18,16 @@ class EntriesController < ApplicationController
     end 
 
 
-def update
-    entry_params = params["entry"].permit("title", "contents")
-    entry = Entry.find(params["id"])
-    entry.update(entry_params)
-    redirect_to(entry_path(entry))
-  end
+    def update
+        entry_params = params["entry"].permit("title", "contents")
+        entry = Entry.find(params["id"])
+        entry.update(entry_params)
+        redirect_to(entry_path(entry))
+    end
+
+    def destroy
+        entry = Entry.find(params["id"])
+        entry.destroy
+        redirect_to(entries_path)
+    end 
 end
